@@ -58,6 +58,12 @@ int main(int argc, char **argv) {
 
     cout<<"szerokosc: "<<width<<endl;
     cout<<"wysokosc: "<<height<<endl;
+    cout<<"wielkosc naglowka: "<<bmpInfoHeader.sizeOfThisHeader<<endl;
+    cout<<"liczba warstw kolorow: "<<bmpInfoHeader.numberOfColorPlanes<<endl;
+    cout<<"liczba bitów na pixel: "<<bmpInfoHeader.colorDepth <<endl;
+    cout<<"pozioma rozdzielczosc (px/m): "<<bmpInfoHeader.horizontalResolution<<endl;
+    cout<<"pionowa rozdzielczosc (px/m): "<<bmpInfoHeader.verticalResolution<<endl;
+
 
     bmpInfoHeader.height = height;
     bmpInfoHeader.width = width;
